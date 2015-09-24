@@ -1,0 +1,77 @@
+body {
+  text-align: center;
+  color: #FFF;
+  background-color: #2F2342;
+  font-family: 'Hind Siliguri', sans-serif;
+  margin: 0;
+  padding: 0; }
+
+h1#logo {
+  font-family: 'Righteous', cursive;
+  font-size: 4em;
+  margin-bottom: 0; }
+
+header h2 {
+  margin-top: 0; }
+
+section h2 {
+  font-size: 2.2em;
+  margin: 0 auto 30px; }
+
+section {
+  margin: 0;
+  padding: 30px; }
+
+section#horizontal-income-tax-bar {
+  background-color: #FEFEFE;
+  color: black; }
+  section#horizontal-income-tax-bar div.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 10%; }
+    section#horizontal-income-tax-bar div.flex-container div {
+      text-align: center;
+      box-sizing: border-box; }
+    section#horizontal-income-tax-bar div.flex-container .first {
+      border-left: none;
+      width: 18.5%;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px; }
+    section#horizontal-income-tax-bar div.flex-container .middle {
+      width: 56.4%;
+      border-left: 2px solid #27571d;
+      border-right: 2px solid #27571d; }
+    section#horizontal-income-tax-bar div.flex-container .last {
+      border-right: none;
+      width: 25.1%;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px; }
+    section#horizontal-income-tax-bar div.flex-container div.bracket {
+      background-color: #327427; }
+    section#horizontal-income-tax-bar div.flex-container div.top {
+      border-top: none;
+      border-bottom: none; }
+    section#horizontal-income-tax-bar div.flex-container div.bottom {
+      border-top: none;
+      border-bottom: none; }
+
+section#math-stuff {
+  background-color: #B42B3F; }
+
+section.mythfact {
+  display: flex;
+  align-items: center;
+  text-align: left; }
+  section.mythfact div.mythfact-logo {
+    width: 40%;
+    text-align: right; }
+    section.mythfact div.mythfact-logo h2 {
+      font-size: 8em;
+      margin: 0 40px 0 0; }
+  section.mythfact div.mythfact-text {
+    width: 60%; }
+    section.mythfact div.mythfact-text p {
+      font-size: 1.8em; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,15 +1,91 @@
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1.0; }
+  50% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1.0; } }
+@-o-keyframes blink {
+  0% {
+    opacity: 1.0; }
+  50% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1.0; } }
+@-moz-keyframes blink {
+  0% {
+    opacity: 1.0; }
+  50% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1.0; } }
+@keyframes blink {
+  0% {
+    opacity: 1.0; }
+  50% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1.0; } }
+@-webkit-keyframes fade-in-slow {
+  from {
+    opacity: 0.0; }
+  to {
+    opacity: 1.0; } }
+@-o-keyframes fade-in-slow {
+  from {
+    opacity: 0.0; }
+  to {
+    opacity: 1.0; } }
+@-moz-keyframes fade-in-slow {
+  from {
+    opacity: 0.0; }
+  to {
+    opacity: 1.0; } }
+@keyframes fade-in-slow {
+  from {
+    opacity: 0.0; }
+  to {
+    opacity: 1.0; } }
 body {
   text-align: center;
-  color: #FFF;
-  background-color: #2F2342;
-  font-family: 'Hind Siliguri', sans-serif;
+  color: #000;
+  background-color: #FEFEFE;
+  font-family: "Hind Siliguri", sans-serif;
   margin: 0;
   padding: 0; }
+  body p {
+    font-size: 1.2em;
+    line-height: 180%; }
+
+header {
+  margin: 300px 0 0 0;
+  height: 600px; }
 
 h1#logo {
-  font-family: 'Righteous', cursive;
-  font-size: 4em;
+  font-family: "Playfair Display", cursive;
+  color: #264873;
+  font-size: 6em;
   margin-bottom: 0; }
+  h1#logo span.blink {
+    -webkit-animation: blink 0.75s linear infinite;
+    -moz-animation: blink 0.75s linear infinite;
+    animation: blink 0.75s linear infinite;
+    color: black; }
+
+div.scroll-arrow {
+  color: #B42B3F;
+  margin-top: 200px; }
+  div.scroll-arrow .fade-in-slow {
+    opacity: 0;
+    animation: fade-in-slow 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 5s; }
+  div.scroll-arrow p.scroll-you-clutz {
+    opacity: 0;
+    animation: fade-in-slow 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 20s;
+    font-size: 1.2em; }
 
 header h2 {
   margin-top: 0; }
@@ -19,8 +95,70 @@ section h2 {
   margin: 0 auto 30px; }
 
 section {
-  margin: 0;
+  margin: 400px 0;
   padding: 30px; }
+
+section.mythfact {
+  margin: 0; }
+
+div.wrapper {
+  width: 940px;
+  margin: 0 auto; }
+
+section#intro {
+  background-color: #B42B3F;
+  color: #FEFEFE;
+  margin-top: 0; }
+
+section#tax-bracket-graph {
+  background-color: #264873; }
+  section#tax-bracket-graph div.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end; }
+    section#tax-bracket-graph div.flex-container div {
+      width: 30%;
+      background-color: #264873; }
+      section#tax-bracket-graph div.flex-container div h3 {
+        margin: 0; }
+      section#tax-bracket-graph div.flex-container div p {
+        margin: 0; }
+    section#tax-bracket-graph div.flex-container div.first-bracket {
+      height: 150px;
+      background-color: #264873; }
+      section#tax-bracket-graph div.flex-container div.first-bracket div.first-bar {
+        background-color: #327427;
+        height: 100px;
+        box-sizing: border-box;
+        width: 100%;
+        padding-top: 20px; }
+    section#tax-bracket-graph div.flex-container div.second-bracket {
+      height: 250px;
+      background-color: #264873; }
+      section#tax-bracket-graph div.flex-container div.second-bracket div.second-bar {
+        background-color: #327427;
+        height: 200px;
+        box-sizing: border-box;
+        width: 100%;
+        padding-top: 20px; }
+    section#tax-bracket-graph div.flex-container div.third-bracket {
+      height: 350px;
+      background-color: #264873; }
+      section#tax-bracket-graph div.flex-container div.third-bracket div.third-bar {
+        height: 300px;
+        box-sizing: border-box;
+        width: 100%;
+        padding-top: 20px;
+        background-color: #787878; }
+        section#tax-bracket-graph div.flex-container div.third-bracket div.third-bar p {
+          margin-bottom: 184px; }
+        section#tax-bracket-graph div.flex-container div.third-bracket div.third-bar div.money-end {
+          height: 50px;
+          background-color: #327427;
+          width: 100%;
+          padding-top: 20px; }
+          section#tax-bracket-graph div.flex-container div.third-bracket div.third-bar div.money-end p {
+            margin: 0; }
 
 section#horizontal-income-tax-bar {
   background-color: #FEFEFE;
@@ -62,7 +200,9 @@ section#math-stuff {
 section.mythfact {
   display: flex;
   align-items: center;
-  text-align: left; }
+  text-align: left;
+  background-color: #264873;
+  color: #FEFEFE; }
   section.mythfact div.mythfact-logo {
     width: 40%;
     text-align: right; }

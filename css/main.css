@@ -128,7 +128,7 @@ section#tax-bracket-graph {
       background-color: #264873; }
       section#tax-bracket-graph div.flex-container div.first-bracket div.first-bar {
         background-color: #327427;
-        height: 100px;
+        height: 120px;
         box-sizing: border-box;
         width: 100%;
         padding-top: 20px; }
@@ -137,7 +137,7 @@ section#tax-bracket-graph {
       background-color: #264873; }
       section#tax-bracket-graph div.flex-container div.second-bracket div.second-bar {
         background-color: #327427;
-        height: 200px;
+        height: 220px;
         box-sizing: border-box;
         width: 100%;
         padding-top: 20px; }
@@ -145,13 +145,13 @@ section#tax-bracket-graph {
       height: 350px;
       background-color: #264873; }
       section#tax-bracket-graph div.flex-container div.third-bracket div.third-bar {
-        height: 300px;
+        height: 320px;
         box-sizing: border-box;
         width: 100%;
         padding-top: 20px;
         background-color: #787878; }
         section#tax-bracket-graph div.flex-container div.third-bracket div.third-bar p {
-          margin-bottom: 184px; }
+          margin-bottom: 196px; }
         section#tax-bracket-graph div.flex-container div.third-bracket div.third-bar div.money-end {
           height: 50px;
           background-color: #327427;

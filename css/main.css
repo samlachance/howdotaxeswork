@@ -106,59 +106,55 @@ div.wrapper {
   margin: 0 auto; }
 
 section#intro {
-  background-color: #B42B3F;
-  color: #FEFEFE;
   margin-top: 0; }
 
-section#tax-bracket-graph {
-  background-color: #264873; }
-  section#tax-bracket-graph div.flex-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end; }
-    section#tax-bracket-graph div.flex-container div {
-      width: 30%;
-      background-color: #264873; }
-      section#tax-bracket-graph div.flex-container div h3 {
-        margin: 0; }
-      section#tax-bracket-graph div.flex-container div p {
-        margin: 0; }
-    section#tax-bracket-graph div.flex-container div.first-bracket {
-      height: 150px;
-      background-color: #264873; }
-      section#tax-bracket-graph div.flex-container div.first-bracket div.first-bar {
+section#tax-bracket-graph div.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end; }
+  section#tax-bracket-graph div.flex-container div {
+    width: 30%;
+    background-color: #264873; }
+    section#tax-bracket-graph div.flex-container div h3 {
+      margin: 0; }
+    section#tax-bracket-graph div.flex-container div p {
+      margin: 0; }
+  section#tax-bracket-graph div.flex-container div.first-bracket {
+    height: 150px;
+    background-color: #264873; }
+    section#tax-bracket-graph div.flex-container div.first-bracket div.first-bar {
+      background-color: #327427;
+      height: 120px;
+      box-sizing: border-box;
+      width: 100%;
+      padding-top: 20px; }
+  section#tax-bracket-graph div.flex-container div.second-bracket {
+    height: 250px;
+    background-color: #264873; }
+    section#tax-bracket-graph div.flex-container div.second-bracket div.second-bar {
+      background-color: #327427;
+      height: 220px;
+      box-sizing: border-box;
+      width: 100%;
+      padding-top: 20px; }
+  section#tax-bracket-graph div.flex-container div.third-bracket {
+    height: 350px;
+    background-color: #264873; }
+    section#tax-bracket-graph div.flex-container div.third-bracket div.third-bar {
+      height: 320px;
+      box-sizing: border-box;
+      width: 100%;
+      padding-top: 20px;
+      background-color: #787878; }
+      section#tax-bracket-graph div.flex-container div.third-bracket div.third-bar p {
+        margin-bottom: 196px; }
+      section#tax-bracket-graph div.flex-container div.third-bracket div.third-bar div.money-end {
+        height: 50px;
         background-color: #327427;
-        height: 120px;
-        box-sizing: border-box;
         width: 100%;
         padding-top: 20px; }
-    section#tax-bracket-graph div.flex-container div.second-bracket {
-      height: 250px;
-      background-color: #264873; }
-      section#tax-bracket-graph div.flex-container div.second-bracket div.second-bar {
-        background-color: #327427;
-        height: 220px;
-        box-sizing: border-box;
-        width: 100%;
-        padding-top: 20px; }
-    section#tax-bracket-graph div.flex-container div.third-bracket {
-      height: 350px;
-      background-color: #264873; }
-      section#tax-bracket-graph div.flex-container div.third-bracket div.third-bar {
-        height: 320px;
-        box-sizing: border-box;
-        width: 100%;
-        padding-top: 20px;
-        background-color: #787878; }
-        section#tax-bracket-graph div.flex-container div.third-bracket div.third-bar p {
-          margin-bottom: 196px; }
-        section#tax-bracket-graph div.flex-container div.third-bracket div.third-bar div.money-end {
-          height: 50px;
-          background-color: #327427;
-          width: 100%;
-          padding-top: 20px; }
-          section#tax-bracket-graph div.flex-container div.third-bracket div.third-bar div.money-end p {
-            margin: 0; }
+        section#tax-bracket-graph div.flex-container div.third-bracket div.third-bar div.money-end p {
+          margin: 0; }
 
 section#horizontal-income-tax-bar {
   background-color: #FEFEFE;
@@ -195,14 +191,27 @@ section#horizontal-income-tax-bar {
       border-bottom: none; }
 
 section#math-stuff {
-  background-color: #B42B3F; }
+  background-color: #B42B3F;
+  color: #FEFEFE; }
+  section#math-stuff .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    section#math-stuff .flex-container table {
+      text-align: left;
+      font-size: 2em; }
+      section#math-stuff .flex-container table .right {
+        text-align: right;
+        padding-right: 10px; }
+      section#math-stuff .flex-container table .math-total {
+        font-weight: bold; }
+    section#math-stuff .flex-container img {
+      width: 400px; }
 
 section.mythfact {
   display: flex;
   align-items: center;
-  text-align: left;
-  background-color: #264873;
-  color: #FEFEFE; }
+  text-align: left; }
   section.mythfact div.mythfact-logo {
     width: 40%;
     text-align: right; }

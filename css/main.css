@@ -56,6 +56,10 @@ body {
   body p {
     font-size: 1.2em;
     line-height: 180%; }
+  body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
 
 header {
   margin: 300px 0 0 0;
@@ -106,55 +110,60 @@ div.wrapper {
   margin: 0 auto; }
 
 section#intro {
-  margin-top: 0; }
+  margin-top: 0;
+  background-color: #B42B3F;
+  color: #FEFEFE; }
 
-section#tax-bracket-graph div.flex-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end; }
-  section#tax-bracket-graph div.flex-container div {
-    width: 30%;
-    background-color: #264873; }
-    section#tax-bracket-graph div.flex-container div h3 {
-      margin: 0; }
-    section#tax-bracket-graph div.flex-container div p {
-      margin: 0; }
-  section#tax-bracket-graph div.flex-container div.first-bracket {
-    height: 150px;
-    background-color: #264873; }
-    section#tax-bracket-graph div.flex-container div.first-bracket div.first-bar {
-      background-color: #327427;
-      height: 120px;
-      box-sizing: border-box;
-      width: 100%;
-      padding-top: 20px; }
-  section#tax-bracket-graph div.flex-container div.second-bracket {
-    height: 250px;
-    background-color: #264873; }
-    section#tax-bracket-graph div.flex-container div.second-bracket div.second-bar {
-      background-color: #327427;
-      height: 220px;
-      box-sizing: border-box;
-      width: 100%;
-      padding-top: 20px; }
-  section#tax-bracket-graph div.flex-container div.third-bracket {
-    height: 350px;
-    background-color: #264873; }
-    section#tax-bracket-graph div.flex-container div.third-bracket div.third-bar {
-      height: 320px;
-      box-sizing: border-box;
-      width: 100%;
-      padding-top: 20px;
-      background-color: #787878; }
-      section#tax-bracket-graph div.flex-container div.third-bracket div.third-bar p {
-        margin-bottom: 196px; }
-      section#tax-bracket-graph div.flex-container div.third-bracket div.third-bar div.money-end {
-        height: 50px;
+section#tax-bracket-graph {
+  background-color: #264873;
+  color: #FEFEFE; }
+  section#tax-bracket-graph div.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end; }
+    section#tax-bracket-graph div.flex-container div {
+      width: 30%;
+      background-color: #264873; }
+      section#tax-bracket-graph div.flex-container div h3 {
+        margin: 0; }
+      section#tax-bracket-graph div.flex-container div p {
+        margin: 0; }
+    section#tax-bracket-graph div.flex-container div.first-bracket {
+      height: 150px;
+      background-color: #264873; }
+      section#tax-bracket-graph div.flex-container div.first-bracket div.first-bar {
         background-color: #327427;
+        height: 120px;
+        box-sizing: border-box;
         width: 100%;
         padding-top: 20px; }
-        section#tax-bracket-graph div.flex-container div.third-bracket div.third-bar div.money-end p {
-          margin: 0; }
+    section#tax-bracket-graph div.flex-container div.second-bracket {
+      height: 250px;
+      background-color: #264873; }
+      section#tax-bracket-graph div.flex-container div.second-bracket div.second-bar {
+        background-color: #327427;
+        height: 220px;
+        box-sizing: border-box;
+        width: 100%;
+        padding-top: 20px; }
+    section#tax-bracket-graph div.flex-container div.third-bracket {
+      height: 350px;
+      background-color: #264873; }
+      section#tax-bracket-graph div.flex-container div.third-bracket div.third-bar {
+        height: 320px;
+        box-sizing: border-box;
+        width: 100%;
+        padding-top: 20px;
+        background-color: #787878; }
+        section#tax-bracket-graph div.flex-container div.third-bracket div.third-bar p {
+          margin-bottom: 196px; }
+        section#tax-bracket-graph div.flex-container div.third-bracket div.third-bar div.money-end {
+          height: 50px;
+          background-color: #327427;
+          width: 100%;
+          padding-top: 20px; }
+          section#tax-bracket-graph div.flex-container div.third-bracket div.third-bar div.money-end p {
+            margin: 0; }
 
 section#horizontal-income-tax-bar {
   background-color: #FEFEFE;
@@ -193,25 +202,31 @@ section#horizontal-income-tax-bar {
 section#math-stuff {
   background-color: #B42B3F;
   color: #FEFEFE; }
+  section#math-stuff .math-total {
+    font-weight: bold; }
   section#math-stuff .flex-container {
     display: flex;
     flex-direction: column;
     align-items: center; }
     section#math-stuff .flex-container table {
       text-align: left;
-      font-size: 2em; }
+      font-size: 2em;
+      margin-top: 100px; }
       section#math-stuff .flex-container table .right {
         text-align: right;
         padding-right: 10px; }
-      section#math-stuff .flex-container table .math-total {
-        font-weight: bold; }
     section#math-stuff .flex-container img {
-      width: 400px; }
+      width: 400px;
+      margin: 100px 0; }
+    section#math-stuff .flex-container p {
+      font-size: 2em; }
 
 section.mythfact {
   display: flex;
   align-items: center;
-  text-align: left; }
+  text-align: left;
+  background-color: #264873;
+  color: #FEFEFE; }
   section.mythfact div.mythfact-logo {
     width: 40%;
     text-align: right; }
@@ -222,5 +237,27 @@ section.mythfact {
     width: 60%; }
     section.mythfact div.mythfact-text p {
       font-size: 1.8em; }
+
+section#dolla-bill {
+  background-color: #27571d;
+  color: #FEFEFE; }
+  section#dolla-bill ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    section#dolla-bill ul li {
+      width: 30%;
+      font-size: 5em;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+      margin: 0;
+      color: #27571d; }
+      section#dolla-bill ul li i.fa-money {
+        color: #27571d; }
+    section#dolla-bill ul li.label {
+      background-color: #27571d;
+      color: #FEFEFE;
+      padding: 0;
+      font-size: 1.2em; }
 
 /*# sourceMappingURL=main.css.map */

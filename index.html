@@ -33,7 +33,7 @@
   <section id="tax-brackets">
     <div class="wrapper">
       <h2>So what are these tax brackets that everyone talks about?</h2>
-      <p>Graduated tax brackets</p>
+      <p>The US uses Graduated tax brackets.  This means everyone's income in the US is taxed in chunks. Each chunk has a tax rate. We call these chunks brackets.</p>
       <p>Salvia letterpress YOLO, mustache paleo hashtag chia direct trade. Plaid salvia church-key normcore Neutra. Swag flannel banh mi gastropub, pickled Wes Anderson Austin narwhal American Apparel salvia flexitarian meditation. Echo Park distillery blog sustainable, ethical disrupt Banksy keffiyeh kogi post-ironic pug artisan farm-to-table. Helvetica art party stumptown letterpress. Neutra cornhole mustache Austin meggings pickled. Readymade yr flexitarian, lo-fi farm-to-table PBR locavore Echo Park American Apparel 3 wolf moon mixtape VHS before they sold out.</p>
       <p>IPhone chillwave beard fanny pack Shoreditch umami. Pour-over taxidermy distillery, leggings drinking vinegar quinoa ennui. Williamsburg Austin mixtape before they sold out, meggings sartorial cliche organic meh. Fap try-hard High Life, hella shabby chic Intelligentsia bespoke Schlitz. Salvia bitters Portland, cray single-origin coffee Etsy American Apparel church-key hashtag jean shorts irony. Umami mumblecore ennui, Helvetica banh mi art party slow-carb Truffaut sustainable swag cray locavore selfies iPhone. Slow-carb fixie pour-over meditation, tousled letterpress mixtape semiotics aesthetic ethical Intelligentsia.</p>
     </div>
@@ -115,26 +115,41 @@
     <p>Your income is not uniformly taxed at the highest rate!</p>
   </section>
   <section id="math-stuff">
-    <h2>Math time!</h2>
-    <p>Let's calculate exactly how much you owe</p>
-    <div class="flex-container">
-      <table>
-        <tr>
-          <td class="right">10% of $9,225 is </td>
-          <td><span class="math-total"> $922.50</span></td>
-        </tr>
-        <tr>
-          <td class="right">15% of $28,225 is </td>
-          <td><span class="math-total"> $4,233.75</span></td>
-        </tr>
-        <tr>
-          <td class="right">25% of $12,550 is </td>
-          <td><span class="math-total"> $3,137.50</span></td>
-        </tr>
-      </table>
-      <img src="img/taxreceipt.png" alt="Tax receipt">
+    <div class="wrapper">
+      <h2>Math time!</h2>
+      <p>Ok, so let's take the information from the previous two images and apply some simple math to figure out how much we would owe the government. Notice how these numbers match the numbers on the bottom of our horizontal bar.</p>
+      <div class="flex-container">
+        <table>
+          <tr>
+            <td class="right">10% of $9,225 is </td>
+            <td><span class="math-total"> $922.50</span></td>
+          </tr>
+          <tr>
+            <td class="right">15% of $28,225 is </td>
+            <td><span class="math-total"> $4,233.75</span></td>
+          </tr>
+          <tr>
+            <td class="right">25% of $12,550 is </td>
+            <td><span class="math-total"> $3,137.50</span></td>
+          </tr>
+        </table>
+        <img src="img/taxreceipt.png" alt="Tax receipt">
+        <p>So, you would owe the federal gov <span class="math-total">$8,293.75</span> before deductions.</p>
+      </div>
     </div>
-    <p>So, you would owe the federal government $8,293.75 before deductions.</p>
+  </section>
+  <section id="dolla-bill">
+    <h2>You could also think of it like this:</h2>
+    <h3>After you enter a new tax bracket, you only get to keep a percentage of every newly earned dollar.</h3>
+    <!-- I know that this isn't strictly the correct usage of unordered lists. I'm just having some fun with flexbox -->
+    <ul>
+      <li class="label">1st Bracket</li>
+      <li class="label">2nd Bracket</li>
+      <li class="label">3rd Bracket</li>
+      <li><i class="fa fa-money"></i> 90%</li>
+      <li><i class="fa fa-money"></i> 85%</li>
+      <li><i class="fa fa-money"></i> 75%</li>
+    </ul>
   </section>
 </body>
 </html>

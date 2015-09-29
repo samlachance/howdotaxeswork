@@ -84,8 +84,12 @@ body {
 }
 
 header {
-  margin: 300px 0 0 0;
-  height: 600px;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
 }
 
 
@@ -93,6 +97,7 @@ h1#logo {
   font-family: $title-font, cursive;
   color: $primary;
   font-size: 6em;
+  margin: 0;
   margin-bottom: 0;
 
   span.blink {
@@ -133,12 +138,17 @@ section h2 {
 
 
 section {
-  margin: 400px 0;
-  padding: 30px;
+  height: 100vh;
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 section.mythfact {
-  margin: 0;
+  height: 50vh;
+  flex-direction: row;
+
 }
 
 div.wrapper {
@@ -151,9 +161,13 @@ div.wrapper {
 // Sections
 
 section#intro {
-  margin-top: 0;
   background-color: $secondary;
   color: $white;
+}
+
+section#what-are-taxes {
+  background-color: $primary;
+  color:$white;
 }
 
 section#tax-bracket-graph {
@@ -295,13 +309,12 @@ section#math-stuff {
 
   .flex-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
 
     table {
       text-align: left;
       font-size: 2em;
-      margin-top: 100px;
 
       .right {
         text-align: right;
@@ -311,7 +324,6 @@ section#math-stuff {
 
     img {
       width: 400px;
-      margin: 100px 0;
     }
 
     p {
@@ -324,7 +336,7 @@ section.mythfact {
   display: flex;
   align-items: center;
   text-align: left;
-  background-color: $primary;
+  background-color: $secondary;
   color: $white;
 
   div.mythfact-logo {
@@ -377,4 +389,40 @@ section#dolla-bill {
   }
 
 
+}
+
+section#try-it {
+
+  div.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  input {
+    width: 20%;
+    border: 3px solid black;
+    border-radius: 5px;
+    font-size: 2em;
+    margin: 0;
+    padding: 10px;
+  }
+
+  table {
+    width: 60%;
+    font-size: 1.5em;
+    margin-top: 30px;
+
+
+    td {
+      width: 50%;
+      text-align: left;
+      padding: 0 10px;
+    }
+
+    td.right {
+      text-align: right;
+    }
+  }
 }

@@ -62,13 +62,17 @@ body {
     margin: 0; }
 
 header {
-  margin: 300px 0 0 0;
-  height: 600px; }
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
 
 h1#logo {
   font-family: "Playfair Display", cursive;
   color: #264873;
   font-size: 6em;
+  margin: 0;
   margin-bottom: 0; }
   h1#logo span.blink {
     -webkit-animation: blink 0.75s linear infinite;
@@ -99,19 +103,26 @@ section h2 {
   margin: 0 auto 30px; }
 
 section {
-  margin: 400px 0;
-  padding: 30px; }
+  height: 100vh;
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
 
 section.mythfact {
-  margin: 0; }
+  height: 50vh;
+  flex-direction: row; }
 
 div.wrapper {
   width: 940px;
   margin: 0 auto; }
 
 section#intro {
-  margin-top: 0;
   background-color: #B42B3F;
+  color: #FEFEFE; }
+
+section#what-are-taxes {
+  background-color: #264873;
   color: #FEFEFE; }
 
 section#tax-bracket-graph {
@@ -206,18 +217,16 @@ section#math-stuff {
     font-weight: bold; }
   section#math-stuff .flex-container {
     display: flex;
-    flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    flex-direction: column; }
     section#math-stuff .flex-container table {
       text-align: left;
-      font-size: 2em;
-      margin-top: 100px; }
+      font-size: 2em; }
       section#math-stuff .flex-container table .right {
         text-align: right;
         padding-right: 10px; }
     section#math-stuff .flex-container img {
-      width: 400px;
-      margin: 100px 0; }
+      width: 400px; }
     section#math-stuff .flex-container p {
       font-size: 2em; }
 
@@ -225,7 +234,7 @@ section.mythfact {
   display: flex;
   align-items: center;
   text-align: left;
-  background-color: #264873;
+  background-color: #B42B3F;
   color: #FEFEFE; }
   section.mythfact div.mythfact-logo {
     width: 40%;
@@ -259,5 +268,27 @@ section#dolla-bill {
       color: #FEFEFE;
       padding: 0;
       font-size: 1.2em; }
+
+section#try-it div.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+section#try-it input {
+  width: 20%;
+  border: 3px solid black;
+  border-radius: 5px;
+  font-size: 2em;
+  margin: 0;
+  padding: 10px; }
+section#try-it table {
+  width: 60%;
+  font-size: 1.5em;
+  margin-top: 30px; }
+  section#try-it table td {
+    width: 50%;
+    text-align: left;
+    padding: 0 10px; }
+  section#try-it table td.right {
+    text-align: right; }
 
 /*# sourceMappingURL=main.css.map */

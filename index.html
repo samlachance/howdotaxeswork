@@ -151,5 +151,27 @@
       <li><i class="fa fa-money"></i> 75%</li>
     </ul>
   </section>
+  <section id="try-it">
+    <h2>Try for your self!</h2>
+    <div class="flex-container">
+      <input type="number" id="income" placeholder="Annual income">
+      <table>
+        <tr>
+          <td class="right">Taxes paid from first bracket: </td>
+          <td> $<span id="firstBracket"></span></td>
+        </tr>
+        <tr>
+          <td class="right">Taxes paid from second bracket: </td>
+          <td> $<span id="secondBracket"></span></td>
+        </tr>
+        <tr>
+          <td class="right">Taxes paid from third bracket: </td>
+          <td> $<span id="thirdBracket"></span></td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="js/tax-calc.js"></script>
 </body>
 </html>

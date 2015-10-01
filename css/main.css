@@ -271,7 +271,8 @@ section#dolla-bill {
 
 section#try-it div.flex-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   align-items: center; }
   section#try-it div.flex-container ul {
     list-style: disc;
@@ -285,14 +286,76 @@ section#try-it div.flex-container {
     margin: 0;
     padding: 10px; }
   section#try-it div.flex-container table {
-    width: 60%;
-    font-size: 1.5em;
-    margin-top: 30px; }
+    font-size: 3em; }
     section#try-it div.flex-container table td {
       width: 50%;
       text-align: left;
       padding: 0 5px; }
     section#try-it div.flex-container table td.right {
       text-align: right; }
+  section#try-it div.flex-container div.calculator {
+    width: 400px;
+    background-color: #B42B3F;
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 10%; }
+    section#try-it div.flex-container div.calculator div.top-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      section#try-it div.flex-container div.calculator div.top-row div.solar-panel {
+        background-color: #404040;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 175px;
+        height: 50px; }
+        section#try-it div.flex-container div.calculator div.top-row div.solar-panel div.solar-cell {
+          height: 80%;
+          width: 20%;
+          background-color: #2f1110; }
+      section#try-it div.flex-container div.calculator div.top-row div.calculator-logo {
+        text-align: right;
+        font-style: italic;
+        color: #FEFEFE; }
+        section#try-it div.flex-container div.calculator div.top-row div.calculator-logo h3 {
+          font-size: 1.3em;
+          margin: 0; }
+        section#try-it div.flex-container div.calculator div.top-row div.calculator-logo h4 {
+          font-size: 1.1em;
+          font-weight: normal;
+          margin: -5px 0 0; }
+    section#try-it div.flex-container div.calculator input.screen {
+      width: 320px;
+      height: 75px;
+      margin: 20px;
+      background-color: #98dd9b;
+      color: #000;
+      border-color: #27571d;
+      text-align: right;
+      padding: 0 20px;
+      font-size: 2em; }
+    section#try-it div.flex-container div.calculator input.screen::-webkit-input-placeholder {
+      color: #404040; }
+    section#try-it div.flex-container div.calculator div.keypad {
+      width: 100%;
+      border-sizing: border-box;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 50px; }
+      section#try-it div.flex-container div.calculator div.keypad div.key {
+        width: 21%;
+        height: 75px;
+        margin: 10px 0;
+        font-size: 2em;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 5px; }
+      section#try-it div.flex-container div.calculator div.keypad div.operator {
+        background-color: #264873;
+        color: #FEFEFE; }
 
 /*# sourceMappingURL=main.css.map */

@@ -152,25 +152,53 @@
     </ul>
   </section>
   <section id="try-it">
-    <h2>Try for your self!</h2>
+    <h2>Try for yourself!</h2>
     <div class="flex-container">
-      <p>Remember:</p>
-      <ul>
-        <li>This calculator is for single tax filers.</li>
-        <li>This calculator does not take any deductions into consideration.</li>
-      </ul>
-      <input type="tel" id="income" placeholder="Annual income">
+
+      <div class="calculator">
+        <div class="top-row">
+          <div class="solar-panel">
+            <div class="solar-cell"></div>
+            <div class="solar-cell"></div>
+            <div class="solar-cell"></div>
+            <div class="solar-cell"></div>
+          </div>
+          <div class="calculator-logo">
+            <h3>FREEDOM FIGURE-ER</h3>
+            <h4>2000</h4>
+          </div>
+        </div>
+        <input type="tel" id="income" placeholder="Annual income" class="screen">
+        <div class="keypad">
+          <div class="key">7</div>
+          <div class="key">8</div>
+          <div class="key">9</div>
+          <div class="key operator"><i class="fa fa-fighter-jet"></i></div>
+          <div class="key">4</div>
+          <div class="key">5</div>
+          <div class="key">6</div>
+          <div class="key operator"><i class="fa fa-usd"></i></div>
+          <div class="key">1</div>
+          <div class="key">2</div>
+          <div class="key">3</div>
+          <div class="key operator"><i class="fa fa-star"></i></div>
+          <div class="key operator"><i class="fa fa-globe"></i></div>
+          <div class="key">0</div>
+          <div class="key operator"><i class="fa fa-balance-scale"></i></div>
+          <div class="key operator"><i class="fa fa-flag"></i></div>
+        </div>
+      </div>
       <table>
         <tr>
-          <td class="right">Taxes paid from first bracket: </td>
+          <td class="right">1st bracket: </td>
           <td> $<span id="firstBracket"></span></td>
         </tr>
         <tr>
-          <td class="right">Taxes paid from second bracket: </td>
+          <td class="right">2nd bracket: </td>
           <td> $<span id="secondBracket"></span></td>
         </tr>
         <tr>
-          <td class="right">Taxes paid from third bracket: </td>
+          <td class="right">3rd bracket: </td>
           <td> $<span id="thirdBracket"></span></td>
         </tr>
       </table>

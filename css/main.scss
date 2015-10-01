@@ -12,7 +12,11 @@ $accent-2: green;
 
 // Money, money, money
 $green: #327427;
+$light-green: #98dd9b;
 $dark-green: #27571d;
+
+// Some calculator specific colors
+$dark-brown: #2f1110;
 
 // Typefaces
 $title-font: 'Playfair Display';
@@ -393,7 +397,8 @@ section#try-it {
 
   div.flex-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 
     ul {
@@ -401,6 +406,7 @@ section#try-it {
       text-align: left;
       margin-bottom: 20px;
     }
+
     input {
       width: 20%;
       border: 3px solid black;
@@ -411,10 +417,7 @@ section#try-it {
     }
 
     table {
-      width: 60%;
-      font-size: 1.5em;
-      margin-top: 30px;
-
+      font-size: 3em;
 
       td {
         width: 50%;
@@ -426,8 +429,94 @@ section#try-it {
         text-align: right;
       }
     }
+
+    div.calculator {
+      width: 400px;
+      // height: 700px;
+      background-color: $secondary;
+      border-radius: 10px;
+      padding: 20px;
+      margin-right: 10%;
+
+      div.top-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        div.solar-panel {
+          background-color: $dark-gray;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          width: 175px;
+          height: 50px;
+
+          div.solar-cell {
+          height: 80%;
+          width: 20%;
+          background-color: $dark-brown;
+          }
+        }
+
+        div.calculator-logo {
+          text-align: right;
+          font-style: italic;
+          color: $white;
+
+          h3 {
+            font-size: 1.3em;
+            margin: 0;
+          }
+
+          h4 {
+            font-size: 1.1em;
+            font-weight: normal;
+            margin: -5px 0 0;
+          }
+        }
+      }
+
+      input.screen {
+        width: 320px;
+        height: 75px;
+        margin: 20px;
+        background-color: $light-green;
+        color: $black;
+        border-color: $dark-green;
+        text-align: right;
+        padding: 0 20px;
+        font-size: 2em;
+      }
+
+      input.screen::-webkit-input-placeholder {
+        color: $dark-gray;
+      }
+
+      div.keypad {
+        width: 100%;
+        border-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 50px;
+
+        div.key {
+          width: 21%;
+          height: 75px;
+          margin: 10px 0;
+          font-size: 2em;
+          background-color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          border-radius: 5px;
+        }
+
+        div.operator {
+          background-color: $primary;
+          color: $white;
+        }
+      }
+    }
   }
-
-
-
 }

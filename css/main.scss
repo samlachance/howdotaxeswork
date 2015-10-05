@@ -149,15 +149,23 @@ section h2 {
 
 section {
   min-height: 100vh;
-  max-height: 200vh;
   padding: 30px;
   display: flex;
   justify-content: center;
   flex-direction: column;
+
+  p{
+    text-align: left;
+  }
+
+  .center {
+    text-align: center;
+  }
 }
 
 section.mythfact {
-  height: 50vh;
+  min-height: 50vh;
+  max-height: 50vh;
   flex-direction: row;
 
 }
@@ -179,10 +187,19 @@ section#intro {
   div.consideration {
     width: 45%;
     margin: 60px 27.5%;
+    background-color: rgba(255,255,255,0.2);
+    border: 4px white solid;
+    border-radius: 5px;
 
     ul {
       list-style: disc;
       text-align: left;
+      margin: 50px;
+      font-size: 1.1em;
+
+      li {
+        margin: 10px 0;
+      }
     }
   }
 }

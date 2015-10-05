@@ -107,18 +107,24 @@ section h2 {
   margin: 0 auto 50px; }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   padding: 30px;
   display: flex;
   justify-content: center;
   flex-direction: column; }
+  section p {
+    text-align: left; }
+  section .center {
+    text-align: center; }
 
 section.mythfact {
-  height: 50vh;
+  min-height: 50vh;
+  max-height: 50vh;
   flex-direction: row; }
 
 div.wrapper {
   width: 940px;
+  height: 100%;
   margin: 0 auto; }
 
 section#intro {
@@ -126,10 +132,17 @@ section#intro {
   color: #FEFEFE; }
   section#intro div.consideration {
     width: 45%;
-    margin: 60px 27.5%; }
+    margin: 60px 27.5%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 4px white solid;
+    border-radius: 5px; }
     section#intro div.consideration ul {
       list-style: disc;
-      text-align: left; }
+      text-align: left;
+      margin: 50px;
+      font-size: 1.1em; }
+      section#intro div.consideration ul li {
+        margin: 10px 0; }
 
 section#what-are-taxes {
   background-color: #264873;

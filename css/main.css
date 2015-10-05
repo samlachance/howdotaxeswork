@@ -394,5 +394,8 @@ section#try-it div.flex-container {
       section#try-it div.flex-container div.calculator div.keypad div.operator {
         background-color: #264873;
         color: #FEFEFE; }
+section#try-it p#seriously {
+  margin-bottom: 0;
+  margin-top: 20px; }
 
 /*# sourceMappingURL=main.css.map */

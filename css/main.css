@@ -136,10 +136,11 @@ section#intro {
   color: #FEFEFE; }
   section#intro div.consideration {
     width: 45%;
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
     background-color: rgba(255, 255, 255, 0.2);
     border: 4px white solid;
-    border-radius: 5px; }
+    border-radius: 5px;
+    margin-top: 40px; }
     section#intro div.consideration ul {
       list-style: disc;
       text-align: left;

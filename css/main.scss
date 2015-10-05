@@ -146,7 +146,6 @@ section h2 {
   margin: 0 auto 50px;
 }
 
-
 section {
   min-height: 100vh;
   padding: 30px;
@@ -218,7 +217,6 @@ section#tax-bracket-graph {
     justify-content: space-around;
     align-items: flex-end;
 
-
     div {
       width: 30%;
       background-color: $primary;
@@ -226,6 +224,7 @@ section#tax-bracket-graph {
       h3 {
         margin: 0;
       }
+
       p {
         margin: 0;
       }
@@ -419,7 +418,6 @@ section#dolla-bill {
   background-color: $dark-green;
   color: $white;
 
-
   ul {
     display: flex;
     justify-content: space-around;
@@ -437,6 +435,7 @@ section#dolla-bill {
         color: $dark-green;
       }
     }
+
     li.label {
       background-color: $dark-green;
       color: $white;

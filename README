@@ -1,2 +1,11 @@
-This is a site that simply explains how federal income taxes and payroll taxes work
+This is a site that simply explains how federal income taxes and payroll taxes work.
 
+This site is more or less an excuse to practice some html/css/js techniques that I've been wanting to try out.
+
+To be specific, I heavily utilized flex-box and also played around with some CSS3 animations. If you haven't looked at the js already, I'll just go ahead and tell you that it's a hot mess. You've been warned.
+
+Since this was just a fun project that was meant for learning, it will, of course, not support every browser.
+
+In addition to my complete disregard for older browsers, I also have not (and probably never will) adapt the page for mobile. For the best experience, I'd suggest viewing the page in full screen on a large monitor in chrome. Sure, I could go in and make a ton of elements adapt to a bunch of different breakpoints but that's not really the point of this site. Like I said, I made this thing to mess around with flex-box.
+
+Thanks for viewing the site. If you're interesting in contacting me you can email me at slachance@gmail.com or checkout my github http://github.com/samlachance
